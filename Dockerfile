@@ -2,7 +2,7 @@
 FROM mjmg/centos-msr-server-base:latest
 
 RUN \ 
-  yum install -y yum-utils rpmdevtools make R-devel httpd-devel libapreq2-devel libcurl-devel protobuf-devel openssl-devel libpng-devel libtiff-devel libjpeg-turbo-devel fftw-devel netcdf-devel && \
+  yum install -y yum-utils rpmdevtools make httpd-devel libapreq2-devel libcurl-devel protobuf-devel openssl-devel libpng-devel libtiff-devel libjpeg-turbo-devel fftw-devel netcdf-devel && \
   wget http://download.opensuse.org/repositories/home:/jeroenooms:/opencpu-1.6/Fedora_23/src/rapache-1.2.7-2.1.src.rpm && \ 
   wget http://download.opensuse.org/repositories/home:/jeroenooms:/opencpu-1.6/Fedora_23/src/opencpu-1.6.2-7.1.src.rpm && \ 
   yum-builddep -y --nogpgcheck rapache-1.2.7-2.1.src.rpm && \
